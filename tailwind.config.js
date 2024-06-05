@@ -15,10 +15,8 @@ module.exports = {
       'brown': '#281e16',
     },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        badge: '#1ad1b9',
       },
     },
   },

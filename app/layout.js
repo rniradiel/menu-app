@@ -1,4 +1,5 @@
 import './globals.css';
+import Providers from './components/providers';
 
 export const metadata = {
   title: 'Menu',
@@ -9,7 +10,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

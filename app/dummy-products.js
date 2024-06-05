@@ -9,50 +9,50 @@ export const DUMMY_PRODUCTS = [
   {
     id: 'p1',
     image: burger,
-    title: 'Majestic Vintage Mocha Overcoat',
+    title: 'Classic Burger',
     price: 129.99,
     description:
-      'Channel timeless sophistication with this stunning mocha overcoat. Crafted for the discerning gentleman who appreciates the fine blend of vintage charm and modern elegance.',
+      'A juicy, perfectly grilled beef patty served on a toasted brioche bun with crisp lettuce, ripe tomatoes, tangy pickles, and our special house sauce. Add cheese or bacon for an extra treat!',
   },
   {
     id: 'p2',
     image: curry,
-    title: 'Enchanting Blush Dream Gown',
+    title: 'Spicy Chicken Curry',
     price: 189.99,
     description:
-      'Bask in the glow of elegance with our Enchanting Blush Dream Gown. Embody the regality of a queen with a sweet touch of pink that whispers enchantment. This is the perfect piece for those seeking to create unforgettable moments.',
+      'Tender chicken pieces simmered in a rich, aromatic sauce with tomatoes, onions, and a blend of traditional Indian spices. Served with steamed basmati rice and warm naan bread.',
   },
 
   {
     id: 'p3',
     image: dumplings,
-    title: 'Vintage Sunshine Rain Jacket',
+    title: 'Pork Dumplings',
     price: 49.99,
     description:
-      'Brace the showers in style! Our Vintage Sunshine Rain Jacket ensures that you stand out, even in the dullest weather. Because rain is never a reason to compromise on your fashion quotient.',
+      'Handmade dumplings stuffed with savory pork and finely chopped vegetables, steamed to perfection and served with a tangy soy-ginger dipping sauce. A delightful bite of Asia!',
   },
   {
     id: 'p4',
     image: macncheese,
-    title: 'Classic Merlot Business Suit',
+    title: 'Ultimate Mac & Cheese',
     price: 249.99,
     description:
-    'Step into the boardroom with unmatched confidence in our Classic Merlot Business Suit. Exuding an air of refined class and understated power, it is ideal for the modern executive who values tradition and elegance.',
-    },
-    {
+    'A creamy blend of sharp cheddar, mozzarella, and parmesan cheeses enveloping perfectly cooked elbow macaroni, topped with a golden breadcrumb crust and baked to bubbly perfection.',
+  },
+  {
     id: 'p5',
     image: pizza,
-    title: 'Ethereal Moonlight Evening Dress',
+    title: 'Margherita Pizza',
     price: 159.99,
     description:
-    'Sweep the room off its feet in our Ethereal Moonlight Evening Dress. Crafted to mimic the allure of the moonlight, this dress is a nod to those who appreciate subtle glamour and a standout silhouette.',
-    },
-    {
+    'A classic Italian favorite with a thin, crispy crust topped with fresh mozzarella, vine-ripened tomatoes, and aromatic basil leaves, finished with a drizzle of extra virgin olive oil.',
+  },
+  {
     id: 'p6',
     image: tomatoSalad,
-    title: 'Pioneer Rugged Denim Jacket',
+    title: 'Fresh Tomato Salad',
     price: 79.99,
     description:
-    'Our Pioneer Rugged Denim Jacket is a tribute to those who embody the spirit of adventure. Designed with durability and comfort in mind, this jacket is a wardrobe essential for the urban explorer.'
-    }
+    'A vibrant mix of heirloom tomatoes, fresh mozzarella, and fragrant basil, drizzled with a balsamic reduction and extra virgin olive oil. A refreshing, light dish perfect for any season.'
+  }
 ];

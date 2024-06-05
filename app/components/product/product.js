@@ -1,4 +1,7 @@
+'use client';
 import Image from "next/image";
+import { useDispatch } from 'react-redux';
+import { cartActions } from '../../store/cart-slice';
 
 export default function Product({
   id,
@@ -7,6 +10,15 @@ export default function Product({
   price,
   description,
 }) {
+  const dispatch = useDispatch();
+
+  const addToCartHandler = () => {
+    dispatch(cartActions.addItemToCart({
+      id,
+      title, 
+      price,
+    }));
+  }
 
   return (
     <article className="h-full bg-red rounded-md shadow-md flex flex-col">
@@ -18,7 +30,11 @@ export default function Product({
           <p>{description}</p>
         </div>
         <p className="text-right">
-          <button className="bg-orange hover:bg-[#f5b744] border-none rounded-md px-4 py-2 text-[#201e1a] cursor-pointer">Add to Cart</button>
+          <button 
+            className="bg-orange hover:bg-[#f5b744] border-none rounded-md px-4 py-2 text-[#201e1a] cursor-pointer"
+            onClick={addToCartHandler}>
+            Add to Cart
+          </button>
         </p>
       </div>
     </article>
