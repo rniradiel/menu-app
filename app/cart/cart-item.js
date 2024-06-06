@@ -20,9 +20,9 @@ export default function CartItem(props) {
   };
   
   return (
-    <li className="bg-gray-700 p-4 mb-4">
+    <li className="p-4 mb-4">
         <header className="flex justify-between items-baseline">
-            <h3 className="text-2xl mb-1">{title}</h3>
+            <h3 className="text-lg font-bold mb-1">{title}</h3>
             <div className="text-lg font-bold">
               P{total.toFixed(2)}{' '}
               <span className="text-base font-normal italic">(P{price.toFixed(2)}/item)</span>
@@ -33,8 +33,8 @@ export default function CartItem(props) {
                 x <span className="text-lg font-bold">{quantity}</span>
             </div>
             <div className="flex justify-end mb-2">
-                <button className="bg-transparent border border-white text-white px-4 py-2 mx-2 hover:bg-gray-600 active:bg-gray-600" onClick={removeItemHandler}>-</button>
-                <button className="bg-transparent border border-white text-white px-4 py-2 mx-2 hover:bg-gray-600 active:bg-gray-600" onClick={addItemHandler}>+</button>
+                <button className="cart-buttons" onClick={removeItemHandler}>-</button>
+                <button className="cart-buttons" onClick={addItemHandler}>+</button>
             </div>
         </div>
     </li>

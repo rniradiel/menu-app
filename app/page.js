@@ -1,10 +1,8 @@
 'use client';
 import Header from './components/header/header.js';
 import Product from './product/page.js';
-import ProductItem from './product/product-item/page.js';
 import Cart from './cart/cart.js';
 import Notification from './components/notification/notification.js';
-import { DUMMY_PRODUCTS } from './dummy-products.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { Fragment, useEffect } from 'react';
 import { fetchCartData, sendCartData } from './store/cart-actions';
@@ -35,7 +33,6 @@ function App() {
 
   return (
     <Fragment>
-      <Header/>
       {notification && (
           <Notification 
             status={notification.status}
@@ -43,17 +40,10 @@ function App() {
             message={notification.message}
           />
       )}
+      <Header/>
       <main>
-        {showCart && (
-          <Cart />
-        )}
-        <Product>
-          {DUMMY_PRODUCTS.map((product) => (
-            <li key={product.id}>
-              <ProductItem {...product} />
-            </li>
-          ))}
-        </Product>
+        {showCart && <Cart />}
+        <Product />
       </main>
     </Fragment>
   );

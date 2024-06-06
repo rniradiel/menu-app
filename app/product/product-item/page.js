@@ -31,7 +31,7 @@ export default function ProductItem({
         </div>
         <p className="text-right">
           <button 
-            className="bg-orange hover:bg-[#f5b744] border-none rounded-md px-4 py-2 text-[#201e1a] cursor-pointer"
+            className="bg-orange hover:bg-orange-hover border-none rounded-md px-4 py-2 text-white cursor-pointer font-bold"
             onClick={addToCartHandler}>
               Add to Cart
           </button>

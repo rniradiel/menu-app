@@ -1,5 +1,5 @@
 import './globals.css';
-import Providers from './components/providers/page.js';
+import Providers from './components/providers/providers.js';
 
 export const metadata = {
   title: 'Menu',

@@ -10,16 +10,35 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: theme('colors.orange');
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.cart {
+  @apply absolute bg-orange right-0 w-6/12 rounded border-black shadow-md p-2;
+}
+
+.cart-buttons {
+  @apply bg-transparent border border-black text-black px-4 py-2 mx-2 hover:bg-black hover:text-white active:bg-black hover:text-white;
+}
+
+.notification {
+  @apply w-full bg-success flex justify-between items-center p-2 px-40 text-white flex-wrap;
+}
+
+.notification h2, .notification p {
+  @apply text-base m-0;
+}
+
+.error {
+  background-color: theme('colors.error');
+}
+
+.success {
+  background-color: theme('colors.success');
 }

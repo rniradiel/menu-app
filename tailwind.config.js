@@ -13,11 +13,9 @@ module.exports = {
       'white': '#fdfefd',
       'black': '#0d1010',
       'brown': '#281e16',
-    },
-    extend: {
-      colors: {
-        badge: '#1ad1b9',
-      },
+      'error' : '#690000',
+      'success' : '#206b2f',
+      transparent : 'transparent',
     },
   },
   plugins: [],

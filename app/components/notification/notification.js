@@ -1,17 +1,5 @@
-import classes from './notification.module.css';
-
 export default function Notification(props) {
-    let specialClasses = '';
-
-    if (props.status === 'error') {
-        specialClasses = classes.error;
-    }
-
-    if (props.status === 'success') {
-        specialClasses = classes.success;
-    }
-
-    const cssClasses = `${classes.notification} ${specialClasses}`;
+    const cssClasses = `notification ${props.status}`;
 
     return (
         <section className={cssClasses}>
