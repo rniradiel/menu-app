@@ -1,7 +1,8 @@
 'use client';
 import Header from './components/header/header.js';
-import Menu from './components/product/menu.js';
-import Product from './components/product/product.js';
+import Product from './product/page.js';
+import ProductItem from './product/product-item/page.js';
+import Modal from './components/modal/page.js';
 import Cart from './cart/cart.js';
 import Notification from './components/notification/notification.js';
 import { DUMMY_PRODUCTS } from './dummy-products.js';
@@ -37,21 +38,23 @@ function App() {
     <Fragment>
       <Header/>
       {notification && (
-        <Notification 
-          status={notification.status}
-          title={notification.title}
-          message={notification.message}
-        />
+          <Notification 
+            status={notification.status}
+            title={notification.title}
+            message={notification.message}
+          />
       )}
       <main>
-        {showCart && <Cart />}
-        <Menu>
+        {showCart && (
+          <Cart />
+        )}
+        <Product>
           {DUMMY_PRODUCTS.map((product) => (
             <li key={product.id}>
-              <Product {...product} />
+              <ProductItem {...product} />
             </li>
           ))}
-        </Menu>
+        </Product>
       </main>
     </Fragment>
   );

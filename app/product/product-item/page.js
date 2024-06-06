@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../../store/cart-slice';
 
-export default function Product({
+export default function ProductItem({
   id,
   image,
   title,
@@ -33,7 +33,7 @@ export default function Product({
           <button 
             className="bg-orange hover:bg-[#f5b744] border-none rounded-md px-4 py-2 text-[#201e1a] cursor-pointer"
             onClick={addToCartHandler}>
-            Add to Cart
+              Add to Cart
           </button>
         </p>
       </div>
