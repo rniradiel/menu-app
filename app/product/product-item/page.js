@@ -26,10 +26,10 @@ export default function ProductItem({
       <div className="flex-1 p-4 pb-2 flex flex-col justify-between">
         <div>
           <h3 className="text-orange text-lg mb-1 font-bold">{title}</h3>
-          <p className="text-orange text-base mb-0 font-bold">P{price}</p>
+          <p className="text-orange text-base mb-0 md:mb-2 font-bold">P{price}</p>
           <p>{description}</p>
         </div>
-        <p className="text-right">
+        <p className="text-right md:mt-2">
           <button 
             className="bg-orange hover:bg-orange-hover border-none rounded-md px-4 py-2 text-white cursor-pointer font-bold"
             onClick={addToCartHandler}>

@@ -20,7 +20,7 @@ body {
 }
 
 .cart {
-  @apply absolute bg-orange right-0 w-6/12 rounded border-black shadow-md p-2;
+  @apply absolute bg-orange right-0 rounded border-black w-full md:w-6/12 shadow-2xl p-4;
 }
 
 .cart-buttons {
