@@ -11,7 +11,7 @@ export default function CartButton() {
   };
 
   return (
-    <button className="bg-orange hover:bg-orange-hover text-white font-bold py-2 px-4 rounded" onClick={toggleCartHandler}>
+    <button className="bg-gold hover:bg-lightGold text-white font-bold py-2 px-4 rounded" onClick={toggleCartHandler}>
       <span>My Cart ({cartQuantity})</span>
     </button>
   );

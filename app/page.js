@@ -1,8 +1,10 @@
 'use client';
-import Header from './components/header/header.js';
-import Product from './product/page.js';
-import Cart from './cart/cart.js';
-import Notification from './components/notification/notification.js';
+import Header from './components/Header';
+import Product from './components/Product';
+import Cart from './components/Cart'
+import Notification from './components/Notification';
+import Home from './components/Home';
+import Footer from './components/Footer';
 import { useDispatch, useSelector } from 'react-redux';
 import { Fragment, useEffect } from 'react';
 import { fetchCartData, sendCartData } from './store/cart-actions';
@@ -41,10 +43,12 @@ function App() {
           />
       )}
       <Header/>
+      <Home />
       <main>
         {showCart && <Cart />}
         <Product />
       </main>
+      <Footer />
     </Fragment>
   );
 }

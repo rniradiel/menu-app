@@ -1,5 +1,5 @@
 'use client';
-import CartItem from './cart-item.js';
+import CartItem from './CartItem';
 import { useSelector } from 'react-redux';
 
 export default function Cart() {

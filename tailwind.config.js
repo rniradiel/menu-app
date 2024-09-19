@@ -7,9 +7,9 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'red': '#6f1a07',
-      'orange': '#a8763e',
-      'orange-hover' : '#f5b744',
+      'blue': '#00017a',
+      'gold': '#fcb305',
+      'lightGold' : '#fed701',
       'white': '#fdfefd',
       'black': '#0d1010',
       'brown': '#281e16',
@@ -17,6 +17,11 @@ module.exports = {
       'success' : '#206b2f',
       transparent : 'transparent',
     },
+    extend: {
+      backgroundImage: {
+        'heroImage': "url('/home.webp')",
+      }
+    }
   },
   plugins: [],
 };
