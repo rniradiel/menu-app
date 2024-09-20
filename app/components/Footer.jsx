@@ -6,8 +6,8 @@ import CartButton from './CartButton';
 export default function Footer() {
   return (
     <>
-      <footer id="main-Footer" className="flex align-center justify-center bg-blue p-4">
-        <p className='text-white'>© 2024 Bite & Bliss. All Rights Reserved.</p>
+      <footer id="main-footer" className="bg-blue p-4">
+        <p className='text-center text-white'>© 2024 Bite & Bliss. All Rights Reserved.</p>
       </footer>
     </>
   );
