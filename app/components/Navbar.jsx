@@ -16,7 +16,7 @@ export default function Nav() {
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0V15z" />
         </svg>
       </button>
-      <ul className={`md:flex items-center justify-between ${showMenu ? 'block' : 'hidden'}`}>
+      <ul className={`absolute md:relative left-0 w-full text-center top-[80px] md:top-0 bg-blue md:flex items-center justify-between ${showMenu ? 'block' : 'hidden'}`}>
         <li className='p-2 md:mr-2'>
           <Link href="#home" className="text-lg text-white hover:text-gray-200">
             Home
