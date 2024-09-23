@@ -17,6 +17,7 @@ export default function ProductItem({
       id,
       title, 
       price,
+      image,
     }));
   }
 
