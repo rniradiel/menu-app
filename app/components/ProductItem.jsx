@@ -30,7 +30,7 @@ export default function ProductItem({
           <p className="text-orange text-base mb-0 md:mb-2 font-bold">P{price}</p>
           <p>{description}</p>
         </div>
-        <p className="text-right md:mt-2">
+        <p className="text-right mt-2">
           <button 
             className="bg-gold hover:bg-lightGold border-none rounded-md px-4 py-2 text-white cursor-pointer font-bold"
             onClick={addToCartHandler}>

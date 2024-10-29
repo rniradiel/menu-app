@@ -9,7 +9,7 @@ export default function Nav() {
   };
 
   return (
-    <nav>
+    <nav className="flex items-center md:block">
       <button className="md:hidden flex items-center px-3 py-2 rounded text-white ml-auto" onClick={handleToggleMenu}>
         <svg className="fill-white h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <title>Menu</title>

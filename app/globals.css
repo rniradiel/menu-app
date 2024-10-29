@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .cart {
-  @apply absolute bg-blue right-0 md:top-[80px] border-black w-full md:w-6/12 shadow-2xl p-4;
+  @apply absolute bg-white right-0 top-[80px] border-black w-full md:w-8/12 shadow-2xl p-4;
 }
 
 .cart-notification {
@@ -11,7 +11,7 @@
 }
 
 .cart-buttons {
-  @apply bg-transparent border border-white text-white px-4 py-2 mx-2 hover:bg-white hover:text-black active:bg-white hover:text-black;
+  @apply bg-transparent border border-black text-black px-2 md:px-4 py-2 mx-2 hover:bg-black hover:text-white active:bg-white ;
 }
 
 .notification {

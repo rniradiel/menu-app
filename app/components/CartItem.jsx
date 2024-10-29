@@ -21,23 +21,20 @@ export default function CartItem(props) {
   };
   
   return (
-    <li className="p-4 mb-4 text-white">
-        <Image src={image} alt="cart-item" priority className="w-12 h-12 mr-2" />
-        <header className="flex justify-between items-baseline">
-            <h3 className="text-lg font-bold mb-1">{title}</h3>
-            <div className="text-lg font-bold">
+    <li className="flex justify-between p-2 md:p-4 mb-4">
+        <div className="item-title flex items-center">
+          <Image src={image} alt="cart-item" priority className="w-12 h-12 mr-2" />
+          <h3 className="text-sm md:text-lg font-bold mb-1 md:min-w-40">{title}</h3>
+        </div>
+        <div className="item-quantity flex flex-row items-center">
+          <button className="cart-buttons" onClick={removeItemHandler}>-</button>
+          <span className="text-lg font-bold">{quantity}</span>
+          <button className="cart-buttons" onClick={addItemHandler}>+</button>
+        </div>
+        <div className="item-price flex items-center">
+            <span className="text-lg font-bold">
               P{total.toFixed(2)}{' '}
-              <span className="text-base font-normal italic">(P{price.toFixed(2)}/item)</span>
-            </div>
-        </header>
-        <div className="flex justify-between items-center">
-            <div className="flex items-center">
-                x <span className="text-lg font-bold">{quantity}</span>
-            </div>
-            <div className="flex justify-end mb-2">
-                <button className="cart-buttons" onClick={removeItemHandler}>-</button>
-                <button className="cart-buttons" onClick={addItemHandler}>+</button>
-            </div>
+            </span>
         </div>
     </li>
   );

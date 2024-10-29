@@ -44,9 +44,9 @@ export default function Header() {
             />
         )}
         <div className='flex justify-between bg-blue p-4'>
-          <div id="main-title" className="flex content-center justify-center">
+          <div id="main-title" className="flex items-center justify-center">
             <Image src={logoImg} alt="A plate with food on it" priority className="w-12 h-12 mr-2" />
-            <h1 className="text-3xl font-bold text-gold">Bite & Bliss</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-gold">Bite & Bliss</h1>
           </div>
           <div className="flex text-right md:mr-2">
             <Navbar />

@@ -7,7 +7,7 @@ export default function Cart() {
 
   return (
     <div>
-      <h2 className='text-lg text-white font-bold text-center mb-1'>Your Shopping Cart</h2>
+      <h2 className='text-lg font-bold text-center mb-1'>Your Shopping Cart</h2>
       <ul>
         {cartItems.map((item) => (
           <CartItem
